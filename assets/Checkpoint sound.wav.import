@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Checkpoint sound.wav-0ea9bd900332f85b6e07c5d5b5a93cd3.sample"
+
+[deps]
+
+source_file="res://assets/Checkpoint sound.wav"
+source_md5="95a56063f19e3b173a0c765b34bd4381"
+
+dest_files=[ "res://.import/Checkpoint sound.wav-0ea9bd900332f85b6e07c5d5b5a93cd3.sample" ]
+dest_md5="93cd2db88ffb2612b14783f0e01eddbf"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

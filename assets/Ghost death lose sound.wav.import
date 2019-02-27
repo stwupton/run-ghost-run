@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Ghost death lose sound.wav-4be3d0d20015fb09cf07f7cbcaaef4b1.sample"
+
+[deps]
+
+source_file="res://assets/Ghost death lose sound.wav"
+source_md5="ae227e16673b864ff5e2cd5224d9730e"
+
+dest_files=[ "res://.import/Ghost death lose sound.wav-4be3d0d20015fb09cf07f7cbcaaef4b1.sample" ]
+dest_md5="a6f3dac4efc7d6f0e3194fe5f91bbfe2"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

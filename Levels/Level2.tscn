@@ -1,0 +1,187 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Tilesets/FloorTileset.tres" type="TileSet" id=1]
+[ext_resource path="res://Tilesets/WallTileset.tres" type="TileSet" id=2]
+[ext_resource path="res://Tilesets/WallLight.tscn" type="PackedScene" id=3]
+[ext_resource path="res://PowerDoor/PowerDoor.tscn" type="PackedScene" id=4]
+[ext_resource path="res://PowerKey/PowerKey.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Investigator/Investigator.tscn" type="PackedScene" id=6]
+[ext_resource path="res://AI/AIFaceDirection.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Investigator/Investigator2.tscn" type="PackedScene" id=8]
+[ext_resource path="res://AI/AIMoveBy.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Tilesets/BarrierTileset.tres" type="TileSet" id=10]
+
+[node name="Level2" type="Node2D"]
+
+[node name="Floor" type="TileMap" parent="." index="0"]
+
+mode = 0
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 80, 80 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 65546, -1073741824, 0, 65547, -1073741824, 0, 65548, -1073741824, 0, 65549, -1073741824, 0, 65550, -1073741824, 0, 65551, -1073741824, 0, 131082, -1073741824, 0, 131083, -1073741822, 0, 131084, 1073741825, 0, 131085, 1073741825, 0, 131086, -1610612734, 0, 131087, -1073741824, 0, 196618, -1073741824, 0, 196619, -1073741822, 0, 196620, 1073741825, 0, 196621, 1073741825, 0, 196622, -1610612734, 0, 196623, -1073741824, 0, 262154, -1073741824, 0, 262155, -1073741822, 0, 262156, 1073741825, 0, 262157, 1073741825, 0, 262158, -1610612734, 0, 262159, -1073741824, 0, 327690, -1073741824, 0, 327691, -1073741822, 0, 327692, 1073741825, 0, 327693, 1073741825, 0, 327694, -1610612734, 0, 327695, -1073741824, 0, 393217, -1073741824, 0, 393218, 1073741824, 0, 393219, 1073741824, 0, 393220, 1073741824, 0, 393221, 1073741824, 0, 393222, 1073741824, 0, 393223, 1073741824, 0, 393224, 1073741824, 0, 393225, 1073741824, 0, 393226, -1073741824, 0, 393227, -1073741822, 0, 393228, 1073741825, 0, 393229, 1073741825, 0, 393230, -1610612734, 0, 393231, 1073741824, 0, 393232, 1073741824, 0, 393233, 1073741824, 0, 393234, 1073741824, 0, 393235, 1073741824, 0, 393236, 1073741824, 0, 393237, 1073741824, 0, 393238, -1073741824, 0, 458753, -1073741824, 0, 458754, 2, 0, 458755, 2, 0, 458756, 2, 0, 458757, 2, 0, 458758, 2, 0, 458759, 2, 0, 458760, 2, 0, 458761, 2, 0, 458762, 2, 0, 458763, -1073741823, 0, 458764, 1073741825, 0, 458765, 1073741825, 0, 458766, -1073741823, 0, 458767, 2, 0, 458768, 2, 0, 458769, 2, 0, 458770, 2, 0, 458771, 2, 0, 458772, 2, 0, 458773, 2, 0, 458774, -1073741824, 0, 524289, -1073741824, 0, 524290, 1073741825, 0, 524291, 1073741825, 0, 524292, 1073741825, 0, 524293, 1073741825, 0, 524294, 1073741825, 0, 524295, 1073741825, 0, 524296, 1073741825, 0, 524297, 1073741825, 0, 524298, 1073741825, 0, 524299, 1073741825, 0, 524300, 1073741825, 0, 524301, 1073741825, 0, 524302, 1073741825, 0, 524303, 1073741825, 0, 524304, 1073741825, 0, 524305, 1073741825, 0, 524306, 1073741825, 0, 524307, 1073741825, 0, 524308, 1073741825, 0, 524309, 1073741825, 0, 524310, -1073741824, 0, 589825, -1073741824, 0, 589826, 1073741826, 0, 589827, 1073741826, 0, 589828, 1073741826, 0, 589829, 1073741826, 0, 589830, 1073741826, 0, 589831, 1073741826, 0, 589832, 1073741826, 0, 589833, 1073741826, 0, 589834, 1073741826, 0, 589835, 1073741826, 0, 589836, 1073741826, 0, 589837, 1073741826, 0, 589838, 1073741826, 0, 589839, 1073741826, 0, 589840, 1073741826, 0, 589841, 1073741826, 0, 589842, 1073741826, 0, 589843, 1073741826, 0, 589844, 1073741826, 0, 589845, 1073741826, 0, 589846, -1073741824, 0, 655361, -1073741824, 0, 655362, 1073741824, 0, 655363, 1073741824, 0, 655364, 1073741824, 0, 655365, 1073741824, 0, 655366, 1073741824, 0, 655367, 1073741824, 0, 655368, 1073741824, 0, 655369, 1073741824, 0, 655370, 1073741824, 0, 655371, 1073741824, 0, 655372, 1073741824, 0, 655373, 1073741824, 0, 655374, 1073741824, 0, 655375, 1073741824, 0, 655376, 1073741824, 0, 655377, 1073741824, 0, 655378, 1073741824, 0, 655379, 1073741824, 0, 655380, 1073741824, 0, 655381, 1073741824, 0, 655382, -1073741824, 0 )
+_sections_unfolded = [ "Cell" ]
+
+[node name="Wall" type="TileMap" parent="." index="1"]
+
+mode = 0
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 80, 80 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = true
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 10, 5, 0, 11, 5, 0, 12, 5, 0, 13, 5, 0, 14, 5, 0, 15, 5, 0, 327681, 5, 0, 327682, 5, 0, 327683, 3, 0, 327684, 5, 0, 327685, 5, 0, 327686, 5, 0, 327687, 3, 0, 327688, 5, 0, 327689, 5, 0, 327696, 5, 0, 327697, 5, 0, 327698, 5, 0, 327699, 3, 0, 327700, 5, 0, 327701, 5, 0, 327702, 5, 0 )
+_sections_unfolded = [ "Cell", "Transform" ]
+
+[node name="WallLight" parent="Wall" index="0" instance=ExtResource( 3 )]
+
+position = Vector2( 270, 450 )
+on = true
+
+[node name="WallLight2" parent="Wall" index="1" instance=ExtResource( 3 )]
+
+position = Vector2( 600, 450 )
+on = true
+
+[node name="WallLight3" parent="Wall" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 1560, 450 )
+on = true
+
+[node name="PowerDoor" parent="Wall" index="3" instance=ExtResource( 4 )]
+
+position = Vector2( 1370, 440 )
+
+[node name="PowerKey" parent="Wall" index="4" instance=ExtResource( 5 )]
+
+position = Vector2( 1090, 220 )
+
+[node name="Investigator" parent="Wall" index="5" instance=ExtResource( 6 )]
+
+editor/display_folded = true
+position = Vector2( 1020, 220 )
+
+[node name="AICommands" parent="Wall/Investigator" index="4"]
+
+editor/display_folded = true
+
+[node name="AIFaceDirection" parent="Wall/Investigator/AICommands" index="0" instance=ExtResource( 7 )]
+
+duration = 3.0
+x = 0
+y = 1
+
+[node name="AIFaceDirection2" parent="Wall/Investigator/AICommands" index="1" instance=ExtResource( 7 )]
+
+duration = 0.5
+
+[node name="AlertIcon" parent="Wall/Investigator" index="6"]
+
+editor/display_folded = true
+
+[node name="Investigator3" parent="Wall" index="6" instance=ExtResource( 8 )]
+
+editor/display_folded = true
+position = Vector2( 1620, 670 )
+
+[node name="Right" parent="Wall/Investigator3/Lights" index="0"]
+
+editor/display_folded = false
+
+[node name="AICommands" parent="Wall/Investigator3" index="4"]
+
+editor/display_folded = true
+
+[node name="AIMoveBy" parent="Wall/Investigator3/AICommands" index="0" instance=ExtResource( 9 )]
+
+value = -1000.0
+
+[node name="AIFaceDirection" parent="Wall/Investigator3/AICommands" index="1" instance=ExtResource( 7 )]
+
+duration = 5.0
+x = -1
+
+[node name="AIMoveBy2" parent="Wall/Investigator3/AICommands" index="2" instance=ExtResource( 9 )]
+
+value = 1000.0
+
+[node name="AIFaceDirection2" parent="Wall/Investigator3/AICommands" index="3" instance=ExtResource( 7 )]
+
+duration = 2.0
+
+[node name="AlertIcon" parent="Wall/Investigator3" index="6"]
+
+margin_top = -47.0
+margin_bottom = -33.0
+
+[node name="WallForeground" type="TileMap" parent="." index="2"]
+
+mode = 0
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 80, 80 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 655361, 6, 0, 655362, 6, 0, 655363, 6, 0, 655364, 6, 0, 655365, 6, 0, 655366, 6, 0, 655367, 6, 0, 655368, 6, 0, 655369, 6, 0, 655370, 6, 0, 655371, 6, 0, 655372, 6, 0, 655373, 6, 0, 655374, 6, 0, 655375, 6, 0, 655376, 6, 0, 655377, 6, 0, 655378, 6, 0, 655379, 6, 0, 655380, 6, 0, 655381, 6, 0, 655382, 6, 0 )
+_sections_unfolded = [ "Cell", "Transform" ]
+
+[node name="Barrier" type="TileMap" parent="." index="3"]
+
+mode = 0
+tile_set = ExtResource( 10 )
+cell_size = Vector2( 80, 80 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 9, 0, 0, 10, 1, 0, 11, 1, 0, 12, 1, 0, 13, 1, 0, 14, 1, 0, 15, 1, 0, 16, 0, 0, 65545, 0, 0, 65552, 0, 0, 131081, 0, 0, 131088, 0, 0, 196617, 0, 0, 196624, 0, 0, 262153, 0, 0, 262160, 0, 0, 327680, 0, 0, 327681, 1, 0, 327682, 1, 0, 327683, 1, 0, 327684, 1, 0, 327685, 1, 0, 327686, 1, 0, 327687, 1, 0, 327688, 1, 0, 327689, 1, 0, 327696, 1, 0, 327697, 1, 0, 327698, 1, 0, 327699, 1, 0, 327700, 1, 0, 327701, 1, 0, 327702, 1, 0, 327703, 0, 0, 393216, 0, 0, 393239, 0, 0, 458752, 0, 0, 458775, 0, 0, 524288, 0, 0, 524311, 0, 0, 589824, 0, 0, 589847, 0, 0, 655360, 0, 0, 655361, 1610612737, 0, 655362, 1610612737, 0, 655363, 1610612737, 0, 655364, 1610612737, 0, 655365, 1610612737, 0, 655366, 1610612737, 0, 655367, 1610612737, 0, 655368, 1610612737, 0, 655369, 1610612737, 0, 655370, 1610612737, 0, 655371, 1610612737, 0, 655372, 1610612737, 0, 655373, 1610612737, 0, 655374, 1610612737, 0, 655375, 1610612737, 0, 655376, 1610612737, 0, 655377, 1610612737, 0, 655378, 1610612737, 0, 655379, 1610612737, 0, 655380, 1610612737, 0, 655381, 1610612737, 0, 655382, 1610612737, 0, 655383, 0, 0 )
+_sections_unfolded = [ "Cell", "Transform" ]
+
+[node name="Start" type="Node2D" parent="." index="4"]
+
+position = Vector2( 210, 680 )
+
+
+[editable path="Wall/Investigator"]
+[editable path="Wall/Investigator3"]

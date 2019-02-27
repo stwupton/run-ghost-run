@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Male 2 Front 02.png-76d44f6245e96a368b7b9342cb29ad17.stex"
+
+[deps]
+
+source_file="res://assets/Male 2 Front 02.png"
+source_md5="a661abf949be0cae855eb4b2dd579f5e"
+
+dest_files=[ "res://.import/Male 2 Front 02.png-76d44f6245e96a368b7b9342cb29ad17.stex" ]
+dest_md5="bed0d344e0a40d9ed56372dde56dd65b"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Void background.png-3c0da23b9ab26c81efa867c3d65a40cb.stex"
+
+[deps]
+
+source_file="res://assets/Void background.png"
+source_md5="54b5c878b5a832045a8107654d37184d"
+
+dest_files=[ "res://.import/Void background.png-3c0da23b9ab26c81efa867c3d65a40cb.stex" ]
+dest_md5="fcae585add7163050fd05c23f8f64fbe"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

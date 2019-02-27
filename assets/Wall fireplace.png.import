@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Wall fireplace.png-01843fe42c4e14d1930cdfb764db1390.stex"
+
+[deps]
+
+source_file="res://assets/Wall fireplace.png"
+source_md5="a8da3ad536f3ff2c48a5c2c744e733e2"
+
+dest_files=[ "res://.import/Wall fireplace.png-01843fe42c4e14d1930cdfb764db1390.stex" ]
+dest_md5="9742bf6e5d32094b6d1df41038a8bb1b"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

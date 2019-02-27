@@ -1,0 +1,62 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/Void background.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 40, 40 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 40, 20 )
+
+[node name="BarrierTileset" type="Node"]
+
+[node name="Barrier" type="Sprite" parent="." index="0"]
+
+modulate = Color( 1, 1, 1, 0 )
+texture = ExtResource( 1 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Barrier" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Barrier/StaticBody2D" index="0"]
+
+shape = SubResource( 1 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="BarrierHalf" type="Sprite" parent="." index="1"]
+
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 90, 0 )
+texture = ExtResource( 1 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="BarrierHalf" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BarrierHalf/StaticBody2D" index="0"]
+
+position = Vector2( 0, -20 )
+shape = SubResource( 2 )
+
+

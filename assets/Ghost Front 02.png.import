@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Ghost Front 02.png-8c53a6949a20281e0218222440935e45.stex"
+
+[deps]
+
+source_file="res://assets/Ghost Front 02.png"
+source_md5="d0c3bcf8da17c3b56e434328443b0ccd"
+
+dest_files=[ "res://.import/Ghost Front 02.png-8c53a6949a20281e0218222440935e45.stex" ]
+dest_md5="0cbb00397cd9891b450a8b8768fba91a"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Cam Front.png-548561687f2618413e80fcf0193fcf7e.stex"
+
+[deps]
+
+source_file="res://assets/Cam Front.png"
+source_md5="70ef2a5aa2f7d50e76cf9ca5ef640982"
+
+dest_files=[ "res://.import/Cam Front.png-548561687f2618413e80fcf0193fcf7e.stex" ]
+dest_md5="727b49b121d3e48975882bc47751243b"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

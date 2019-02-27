@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Baby Ghost 01.png-05d07ce13025380c6d24603c197968a9.stex"
+
+[deps]
+
+source_file="res://assets/Baby Ghost 01.png"
+source_md5="f0f2f64652978305f23de97e0e0a90f3"
+
+dest_files=[ "res://.import/Baby Ghost 01.png-05d07ce13025380c6d24603c197968a9.stex" ]
+dest_md5="233bb5a6b0d6c7a1874e015c3b348166"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

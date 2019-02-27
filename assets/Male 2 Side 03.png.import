@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Male 2 Side 03.png-48d6c3c36a1f4ee318eebcd8153f3334.stex"
+
+[deps]
+
+source_file="res://assets/Male 2 Side 03.png"
+source_md5="219cdcc09d52f5ed6bfc9be2d47d5667"
+
+dest_files=[ "res://.import/Male 2 Side 03.png-48d6c3c36a1f4ee318eebcd8153f3334.stex" ]
+dest_md5="5b35bc03711d9dfdb1af6db09a9419e4"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

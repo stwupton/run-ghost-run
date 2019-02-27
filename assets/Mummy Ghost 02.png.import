@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Mummy Ghost 02.png-d4f10c905bfe2b17256a068babea0d0f.stex"
+
+[deps]
+
+source_file="res://assets/Mummy Ghost 02.png"
+source_md5="8181a420f2c705ef6fb8fb468dc31452"
+
+dest_files=[ "res://.import/Mummy Ghost 02.png-d4f10c905bfe2b17256a068babea0d0f.stex" ]
+dest_md5="bf45b3e6db33b0ab12c2488eb7cd26b3"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

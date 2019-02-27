@@ -1,0 +1,112 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Tilesets/WallLight.gd" type="Script" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://assets/light_texture.png" type="Texture" id=3]
+
+[sub_resource type="CircleShape2D" id=1]
+
+custom_solver_bias = 0.0
+radius = 90.0
+
+[node name="WallLight" type="Node2D"]
+
+script = ExtResource( 1 )
+on = false
+
+[node name="Sprite" type="Sprite" parent="." index="0"]
+
+visible = false
+position = Vector2( 32, 49.5 )
+scale = Vector2( 8.375, 5.64063 )
+texture = ExtResource( 2 )
+
+[node name="Lights" type="Node2D" parent="." index="1"]
+
+editor/display_folded = true
+
+[node name="Area2D" type="Area2D" parent="Lights" index="0"]
+
+editor/display_folded = true
+position = Vector2( -30, 0 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Lights/Area2D" index="0"]
+
+position = Vector2( -10, 10 )
+shape = SubResource( 1 )
+
+[node name="Light2D" type="Light2D" parent="Lights/Area2D" index="1"]
+
+position = Vector2( -10, 10 )
+enabled = true
+editor_only = false
+texture = ExtResource( 3 )
+offset = Vector2( 0, 0 )
+texture_scale = 1.0
+color = Color( 1, 0.960449, 0.367188, 1 )
+energy = 1.0
+mode = 0
+range_height = 0.0
+range_z_min = -1024
+range_z_max = 1024
+range_layer_min = 0
+range_layer_max = 0
+range_item_cull_mask = 1
+shadow_enabled = false
+shadow_color = Color( 0, 0, 0, 0 )
+shadow_buffer_size = 2048
+shadow_gradient_length = 0.0
+shadow_filter = 0
+shadow_filter_smooth = 0.0
+shadow_item_cull_mask = 1
+
+[node name="Area2D2" type="Area2D" parent="Lights" index="1"]
+
+editor/display_folded = true
+position = Vector2( 50, 0 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Lights/Area2D2" index="0"]
+
+position = Vector2( -10, 10 )
+shape = SubResource( 1 )
+
+[node name="Light2D" type="Light2D" parent="Lights/Area2D2" index="1"]
+
+position = Vector2( -10, 10 )
+enabled = true
+editor_only = false
+texture = ExtResource( 3 )
+offset = Vector2( 0, 0 )
+texture_scale = 1.0
+color = Color( 1, 0.960449, 0.367188, 1 )
+energy = 1.0
+mode = 0
+range_height = 0.0
+range_z_min = -1024
+range_z_max = 1024
+range_layer_min = 0
+range_layer_max = 0
+range_item_cull_mask = 1
+shadow_enabled = false
+shadow_color = Color( 0, 0, 0, 0 )
+shadow_buffer_size = 2048
+shadow_gradient_length = 0.0
+shadow_filter = 0
+shadow_filter_smooth = 0.0
+shadow_item_cull_mask = 1
+
+

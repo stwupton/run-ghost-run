@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Male 1 Side 03.png-bbd0fa38d62bed19fe98afb0a80f2cd1.stex"
+
+[deps]
+
+source_file="res://assets/Male 1 Side 03.png"
+source_md5="07b5a745058fd0df5b7d52282545be12"
+
+dest_files=[ "res://.import/Male 1 Side 03.png-bbd0fa38d62bed19fe98afb0a80f2cd1.stex" ]
+dest_md5="9092a5538a43f6f9fbbea79336f64a54"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

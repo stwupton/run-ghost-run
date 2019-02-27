@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Camera movement.wav-d1f7454d0bd5a8519d7ce14805588cad.sample"
+
+[deps]
+
+source_file="res://assets/Camera movement.wav"
+source_md5="7a441faa1bb1f4575d37d7eee320a252"
+
+dest_files=[ "res://.import/Camera movement.wav-d1f7454d0bd5a8519d7ce14805588cad.sample" ]
+dest_md5="14ec640188bd21756531d7fcb25a43bb"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

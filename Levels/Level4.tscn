@@ -1,0 +1,217 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Tilesets/FloorTileset.tres" type="TileSet" id=1]
+[ext_resource path="res://Tilesets/WallTileset.tres" type="TileSet" id=2]
+[ext_resource path="res://Camera/Camera.tscn" type="PackedScene" id=3]
+[ext_resource path="res://AI/AIFaceDirection.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Investigator/Investigator2.tscn" type="PackedScene" id=5]
+[ext_resource path="res://AI/AIMoveBy.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Investigator/Investigator.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Tilesets/WallLight.tscn" type="PackedScene" id=8]
+[ext_resource path="res://PowerDoor/PowerDoor.tscn" type="PackedScene" id=9]
+[ext_resource path="res://PowerKey/PowerKey.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Tilesets/BarrierTileset.tres" type="TileSet" id=11]
+
+[node name="Level4" type="Node2D"]
+
+[node name="Floor" type="TileMap" parent="." index="0"]
+
+mode = 0
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 80, 80 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 65538, 0, 0, 65539, 0, 0, 65540, 0, 0, 65541, 0, 0, 65542, 0, 0, 65543, 0, 0, 65544, 0, 0, 65545, 0, 0, 65546, 0, 0, 131074, 0, 0, 131075, 0, 0, 131076, 0, 0, 131077, 0, 0, 131078, 0, 0, 131079, 0, 0, 131080, 0, 0, 131081, 0, 0, 131082, 0, 0, 196610, 0, 0, 196611, 0, 0, 196612, 0, 0, 196613, 0, 0, 196614, 0, 0, 196615, 0, 0, 196616, 0, 0, 196617, 0, 0, 196618, 0, 0, 262146, 0, 0, 262147, 0, 0, 262149, 0, 0, 262150, 0, 0, 262151, 0, 0, 262153, 0, 0, 262154, 0, 0, 327682, 0, 0, 327683, 0, 0, 327689, 0, 0, 327690, 0, 0, 327693, 0, 0, 327694, 0, 0, 393218, 0, 0, 393219, 0, 0, 393225, 0, 0, 393226, 0, 0, 393229, 0, 0, 393230, 0, 0, 393233, 0, 0, 393234, 0, 0, 458754, 0, 0, 458755, 0, 0, 458761, 0, 0, 458762, 0, 0, 458765, 0, 0, 458766, 0, 0, 458769, 0, 0, 458770, 0, 0, 524290, 0, 0, 524291, 0, 0, 524297, 0, 0, 524298, 0, 0, 524301, 0, 0, 524302, 0, 0, 524305, 0, 0, 524306, 0, 0, 524309, 0, 0, 524310, 0, 0, 589826, 0, 0, 589827, 0, 0, 589833, 0, 0, 589834, 0, 0, 589835, 0, 0, 589836, 0, 0, 589837, 0, 0, 589838, 0, 0, 589839, 0, 0, 589840, 0, 0, 589841, 0, 0, 589842, 0, 0, 589843, 0, 0, 589844, 0, 0, 589845, 0, 0, 589846, 0, 0, 655362, 0, 0, 655363, 0, 0, 655369, 0, 0, 655370, 0, 0, 655371, 0, 0, 655372, 0, 0, 655373, 0, 0, 655374, 0, 0, 655375, 0, 0, 655376, 0, 0, 655377, 0, 0, 655378, 0, 0, 655379, 0, 0, 655380, 0, 0, 655381, 0, 0, 655382, 0, 0 )
+_sections_unfolded = [ "Cell" ]
+
+[node name="Wall" type="TileMap" parent="." index="1"]
+
+editor/display_folded = true
+mode = 0
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 80, 80 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = true
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 2, 5, 0, 3, 5, 0, 4, 0, 0, 5, 5, 0, 6, 5, 0, 7, 5, 0, 8, 0, 0, 9, 5, 0, 10, 5, 0, 262157, 5, 0, 262158, 5, 0, 327697, 5, 0, 327698, 5, 0, 458773, 5, 0, 458774, 5, 0, 524299, 5, 0, 524300, 5, 0, 524303, 5, 0, 524304, 5, 0, 524307, 5, 0, 524308, 5, 0 )
+_sections_unfolded = [ "Cell", "Transform" ]
+
+[node name="Camera" parent="Wall" index="0" instance=ExtResource( 3 )]
+
+editor/display_folded = true
+position = Vector2( 520, 240 )
+
+[node name="AICommands" parent="Wall/Camera" index="2"]
+
+editor/display_folded = true
+
+[node name="AIFaceDirection" parent="Wall/Camera/AICommands" index="0" instance=ExtResource( 4 )]
+
+duration = 5.0
+x = -1
+
+[node name="AIFaceDirection2" parent="Wall/Camera/AICommands" index="1" instance=ExtResource( 4 )]
+
+duration = 3.0
+x = 0
+y = -1
+
+[node name="AIFaceDirection3" parent="Wall/Camera/AICommands" index="2" instance=ExtResource( 4 )]
+
+duration = 3.0
+
+[node name="AIFaceDirection4" parent="Wall/Camera/AICommands" index="3" instance=ExtResource( 4 )]
+
+duration = 3.0
+x = 0
+y = -1
+
+[node name="Investigator2" parent="Wall" index="1" instance=ExtResource( 5 )]
+
+editor/display_folded = true
+position = Vector2( 800, 160 )
+
+[node name="AICommands" parent="Wall/Investigator2" index="4"]
+
+editor/display_folded = true
+
+[node name="AIMoveBy" parent="Wall/Investigator2/AICommands" index="0" instance=ExtResource( 6 )]
+
+value = -480.0
+
+[node name="AIFaceDirection" parent="Wall/Investigator2/AICommands" index="1" instance=ExtResource( 4 )]
+
+duration = 3.0
+x = -1
+
+[node name="AIMoveBy2" parent="Wall/Investigator2/AICommands" index="2" instance=ExtResource( 6 )]
+
+value = 480.0
+
+[node name="AIFaceDirection2" parent="Wall/Investigator2/AICommands" index="3" instance=ExtResource( 4 )]
+
+duration = 5.0
+x = -1
+
+[node name="AlertIcon" parent="Wall/Investigator2" index="6"]
+
+editor/display_folded = false
+
+[node name="Investigator" parent="Wall" index="2" instance=ExtResource( 7 )]
+
+editor/display_folded = true
+position = Vector2( 1140, 690 )
+
+[node name="AICommands" parent="Wall/Investigator" index="4"]
+
+editor/display_folded = true
+
+[node name="AIFaceDirection" parent="Wall/Investigator/AICommands" index="0" instance=ExtResource( 4 )]
+
+duration = 5.0
+x = 0
+y = 1
+
+[node name="AIFaceDirection2" parent="Wall/Investigator/AICommands" index="1" instance=ExtResource( 4 )]
+
+duration = 4.0
+x = -1
+
+[node name="WallLight" parent="Wall" index="3" instance=ExtResource( 8 )]
+
+position = Vector2( 520, 40 )
+on = true
+
+[node name="WallLight2" parent="Wall" index="4" instance=ExtResource( 8 )]
+
+position = Vector2( 168, 388 )
+rotation = -1.5708
+_sections_unfolded = [ "Transform" ]
+on = true
+
+[node name="WallLight3" parent="Wall" index="5" instance=ExtResource( 8 )]
+
+position = Vector2( 161.384, 658.739 )
+rotation = -1.5708
+_sections_unfolded = [ "Transform" ]
+on = true
+
+[node name="PowerDoor" parent="Wall" index="6" instance=ExtResource( 9 )]
+
+position = Vector2( 1440, 440 )
+
+[node name="PowerKey" parent="Wall" index="7" instance=ExtResource( 10 )]
+
+position = Vector2( 1120, 440 )
+
+[node name="WallForeground" type="TileMap" parent="." index="2"]
+
+mode = 0
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 80, 80 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 196612, 6, 0, 196616, 6, 0, 262149, 6, 0, 262150, 6, 0, 262151, 6, 0, 655362, 6, 0, 655363, 6, 0, 655369, 6, 0, 655370, 6, 0, 655371, 6, 0, 655372, 6, 0, 655373, 6, 0, 655374, 6, 0, 655375, 6, 0, 655376, 6, 0, 655377, 6, 0, 655378, 6, 0, 655379, 6, 0, 655380, 6, 0, 655381, 6, 0, 655382, 6, 0 )
+_sections_unfolded = [ "Cell", "Transform" ]
+
+[node name="Barrier" type="TileMap" parent="." index="3"]
+
+mode = 0
+tile_set = ExtResource( 11 )
+cell_size = Vector2( 80, 80 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 1, 0, 0, 2, 1, 0, 3, 1, 0, 4, 1, 0, 5, 1, 0, 6, 1, 0, 7, 1, 0, 8, 1, 0, 9, 1, 0, 10, 1, 0, 11, 0, 0, 65537, 0, 0, 65547, 0, 0, 131073, 0, 0, 131083, 0, 0, 196609, 0, 0, 196612, 1610612737, 0, 196616, 1610612737, 0, 196619, 0, 0, 262145, 0, 0, 262148, 0, 0, 262149, 1610612737, 0, 262150, 1610612737, 0, 262151, 1610612737, 0, 262152, 0, 0, 262155, 0, 0, 262156, 0, 0, 262157, 1, 0, 262158, 1, 0, 262159, 0, 0, 327681, 0, 0, 327684, 0, 0, 327688, 0, 0, 327691, 0, 0, 327692, 0, 0, 327695, 0, 0, 327696, 0, 0, 327697, 1, 0, 327698, 1, 0, 327699, 0, 0, 393217, 0, 0, 393220, 0, 0, 393224, 0, 0, 393227, 0, 0, 393228, 0, 0, 393231, 0, 0, 393232, 0, 0, 393235, 0, 0, 458753, 0, 0, 458756, 0, 0, 458760, 0, 0, 458763, 0, 0, 458764, 0, 0, 458767, 0, 0, 458768, 0, 0, 458771, 0, 0, 458773, 1, 0, 458774, 1, 0, 458775, 0, 0, 524289, 0, 0, 524292, 0, 0, 524296, 0, 0, 524299, 1, 0, 524300, 1, 0, 524303, 1, 0, 524304, 1, 0, 524307, 1, 0, 524308, 1, 0, 524311, 0, 0, 589825, 0, 0, 589828, 0, 0, 589832, 0, 0, 589847, 0, 0, 655361, 0, 0, 655362, 1610612737, 0, 655363, 1610612737, 0, 655364, 0, 0, 655368, 0, 0, 655369, 1610612737, 0, 655370, 1610612737, 0, 655371, 1610612737, 0, 655372, 1610612737, 0, 655373, 1610612737, 0, 655374, 1610612737, 0, 655375, 1610612737, 0, 655376, 1610612737, 0, 655377, 1610612737, 0, 655378, 1610612737, 0, 655379, 1610612737, 0, 655380, 1610612737, 0, 655381, 1610612737, 0, 655382, 1610612737, 0, 655383, 0, 0 )
+_sections_unfolded = [ "Cell", "Transform" ]
+
+[node name="Start" type="Node2D" parent="." index="4"]
+
+position = Vector2( 240, 750 )
+
+
+[editable path="Wall/Camera"]
+[editable path="Wall/Investigator2"]
+[editable path="Wall/Investigator"]

@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Male 2 Back 03.png-515910eddcacd8b503bc69de94929915.stex"
+
+[deps]
+
+source_file="res://assets/Male 2 Back 03.png"
+source_md5="a075c3290f8e7ff1905c0b28a85a851f"
+
+dest_files=[ "res://.import/Male 2 Back 03.png-515910eddcacd8b503bc69de94929915.stex" ]
+dest_md5="ea51f2be51fdf86edccb614046b5568d"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

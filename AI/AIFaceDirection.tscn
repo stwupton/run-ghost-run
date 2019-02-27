@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://AI/AIFaceDirection.gd" type="Script" id=1]
+
+[node name="AIFaceDirection" type="Node"]
+
+script = ExtResource( 1 )
+duration = 1.0
+x = 1
+y = 0
+
+
